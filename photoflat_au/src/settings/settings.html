@@ -89,58 +89,47 @@ $('.navbar-collapse ul li a').click(function() {
             </div>
         </div>
     </nav>
+<section id="usersettings">
+<div class="container" class="purpletowhite">
+    <div class="controls" style="margin-top: 50px;">
 
-    <div class="col-xs-12 col-lg-4">
-        <div class="box">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="http://placehold.it/350x150" class="profile-pic" style="padding: 0px;">
-                    <a href="#settings"><button class="btn btn-primary text-right">Seaded</button></a>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <div class="form-group">
+                    <label for="form_name">Amet *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Sisestage eesnimi *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Lae üles profiilipilt</label>
+                        <input id="input-4" name="input4[]" type="file" multiple class="file-loading">
+                            <script>
+                            $(document).on('ready', function() {
+                                $("#input-4").fileinput({showCaption: false});
+                            });
+                            </script>
+                </div>
+                <div class="form-group">
+                    <label for="form_phone">Telefon</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Sisesta telefoninumber">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Sisesta email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+                 <div class="form-group">
+                    <label for="form_message">Endast *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Kirjuta *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                    <input type="submit" class="btn btn-success btn-send" value="Seadista">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 user-info text-left">
-                    <div class="col-xs-12">
-                        <h5>Nimi: <span id="name">Tester Tester</span></h5>
-                        <h5>Amet: <span id="name">Tester ja fotograaf</span></h5>
-                        <h5>E-mail: <span id="name">tester@testerland.com</span></h5>
-                        <h5>Endast:</h5>
-                        <div class="info-box"></div>
-                    </div>
-                </div>
-            </div>
         </div>
-         <div class="btn btn-primary text-center" style="margin-top: 20px;">Vaata täis portfooliot</div>
-        
-    </div>
-    <div class="col-xs-12 col-lg-4">
-        <div class=row>
-            <div class="col-xs-12">
-                    <div class="port-box">
-                        <img src="pics/portfolio-1.jpg" class="img-responsive center-block">
-                    </div>
-                </div>
-            <div class="col-xs-12">
-                    <div class="port-box">
-                        <img src="pics/portfolio-2.jpg" class="img-responsive center-block">
-                    </div>
-                </div>
         </div>
     </div>
-    <div class="col-xs-12 col-lg-4">
-        <div class=row>
-            <div class="col-xs-12">
-                    <div class="port-box">
-                        <img src="pics/maja1.png" class="img-responsive center-block">
-                    </div>
-                </div>
-            <div class="col-xs-12">
-                    <div class="port-box">
-                        <img src="pics/portfolio-3.jpg" class="img-responsive center-block">
-                    </div>
-                </div>
-        </div>
-    </div>
+</section>
     </body>
 </html>
 </template>
